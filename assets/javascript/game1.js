@@ -14,8 +14,7 @@ var losses = 0;
 var counter = 0;
 
 var yourScore = $("#current-score");
-
-
+var targetNumber = Math.floor(Math.random() * (targetMax - targetMin)) + targetMin;
 
   //Images 1, 2, 3, 4, 5, 6
 
@@ -36,7 +35,7 @@ var yourScore = $("#current-score");
 
   start();
 
-  function reset() {
+  function reset() { 
       var targetNumber = Math.floor(Math.random() * (targetMax - targetMin)) + targetMin;
       $("#number-to-guess").text(targetNumber);
       counter = 0;
@@ -194,3 +193,8 @@ var yourScore = $("#current-score");
   });
 
 });
+
+//Troubleshoot:
+//win and lose alert don't show up when they are supposed to...
+//the alerts show up two times, and don't correspond to the counter
+//check counter updates AND how it's interacting with the targetnumber
