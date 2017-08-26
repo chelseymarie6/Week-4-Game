@@ -196,6 +196,8 @@ var targetNumber = Math.floor(Math.random() * (targetMax - targetMin)) + targetM
 
 //Troubleshoot:
 //win and lose alert don't show up when they are supposed to...
-//the alerts show up two times, and don't correspond to the counter
+//the alerts don't correspond to the counter
 //check counter updates AND how it's interacting with the targetnumber
 //is it a problem with Math.Random? 
+//verify counter tracking is working - seems like it is, but comparing it to 
+//  targetNumber is an issue. 
